@@ -1,0 +1,109 @@
+/*Quita default settings al html*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+}
+
+/*Conf general al body*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    background: linear-gradient(rgba(141, 141, 141, 0.2)20%, rgba(0, 0, 0, 0.2)),url(./Assets/img/img_bck.jpeg);
+    background-size: cover; /*ajusta la img al contenedor propocionalmente*/
+    background-position: center; /* matiene la imagen siempre centrada */
+    background-attachment: fixed; /* No mosaico*/
+    color: rgb(240, 240, 240); /*Color blanco para body */
+    display: flex; /* inicializamos el flex */
+    align-items: center; /*para poder usar el align y centrar.*/
+    flex-direction: column; /* Ordena los elementos en columna*/
+    width: 100vw; /*Centra los elementos */
+    font-family: 'Open Sans', Tahoma, sans-serif;
+    gap: 16px;
+}
+
+.popSlide  {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(240,240,240);
+    /*----------------------------------------------*/
+}
+
+.contenedor {
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    display: flex; /* se inicia el flex*/
+    flex-direction: column; /* dirección de los elementos*/
+    align-items: center; /* alineación de elementos */
+}
+header {
+    width: 95%;
+    max-width: 788px; /*en pantallas grandes o ultrawide no se vaya de extremo a extremo*/
+    display: flex; /*iniciamos el flex*/
+    justify-content: flex-end; /* movemos el elemento al final*/
+    padding: 12px;
+    margin-top: 15px;
+}
+
+
+.img_perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+} 
+
+.btn_tiles {
+    width: 85%;
+    height:60px;
+    border-radius: 12px;
+    background-color:#E0774A;
+    border: 3.5px solid #E0774A;
+    min-width: 350px;
+    margin-top: 20px;
+    transition: background-color 0.4s ease-in;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn_tiles:hover{
+    background-color: transparent;
+    color: #E07A5F;
+
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.icon {
+    margin: 4px 8px;
+    width: 44px;
+    height: 44px;
+     
+}
+
+.socialIcon-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.link-social {
+    color: #fff;
+    transition: all .5s ease;
+}
+
