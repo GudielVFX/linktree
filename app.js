@@ -1,9 +1,11 @@
+//------------> DECLARACIONES GLOBALES Bio & Profile <----------------*/
 
-
+const usernameElement = document.getElementById('userName'); //---> Guarda el Username
+const bioElement = document.getElementById('aboutPofile'); //---> Guarda el Bio del profile
 
 
 /* ------------------------------------------------- */
-
+//-------------------->  Declaraciones Botones<-----------------------
   const menuButton = document.querySelector('.menu-button');
   const card = document.querySelector('.card');
   const closeButton = document.querySelector('.close-button');
@@ -39,3 +41,19 @@
       document.removeEventListener('click', handleClickOutside);
     }
   });
+
+
+//--------------Modificar datos perfil
+// Funciones para cambiar el nombre de usuario y la bio
+function setUsername(name) {
+  usernameElement.textContent = name;
+}
+
+function setBio(bioText) {
+  bioElement.textContent = bioText;
+}
+
+//------>> Seteo de valores <<------
+
+setUsername('Jhonatn Prado');
+setBio('Trainee Full Stack Developer');

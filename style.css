@@ -167,3 +167,63 @@ h1 {
     text-decoration: none;
     color: #fddad0;
   }
+
+
+
+  /*---------------------------------CARDS ------------- */
+
+  /* Card styles */
+.card {
+    background-color: #df7d53;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 450px; 
+    width: 100%;
+    position: fixed;
+    bottom: -100%; /* Inicia la tarjeta fuera de la pantalla */
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .card.show {
+    bottom: 50px; /* Posiciona la tarjeta en el centro */
+    opacity: 1;
+  }
+  
+  .card h2 {
+    margin-bottom: 16px;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card li {
+    margin-bottom: 12px;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Close button styles */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+  }
+
