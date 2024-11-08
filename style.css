@@ -23,14 +23,37 @@ body {
     font-family: 'Open Sans', Tahoma, sans-serif;
     gap: 16px;
 }
-
+/*
 .popSlide .btn_slide  {
     width: 40px;
     height: 40px;
     border-radius: 20px;
     background-color: white; /*era blanco */
     /*----------------------------------------------*/
-}
+/*} */
+
+/* Menu button styles */
+.menu-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    color: white; /* Esto cambiará el color del SVG */
+  }
+  
+  .menu-button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* También actualizado para que sea blanco transparente */
+  }
+  
+  /* Asegurarnos que el SVG herede el color blanco */
+  .menu-button svg {
+    stroke: white;
+  }
 
 .contenedor {
     width: 91%;
@@ -95,15 +118,35 @@ h1 {
      
 }
 
-.socialIcon-container {
+
+/*----------------------------------------------------------*/
+/* Social links */
+.social-links {
     display: flex;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 20px;
-    padding: 30px 0;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.link-social {
-    color: #fff;
-    transition: all .5s ease;
+.social-icon:hover {
+    transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
+.social-icon svg {
+    width: 20px;
+    height: 20px;
+    stroke: white;
+}
