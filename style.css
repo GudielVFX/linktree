@@ -83,7 +83,7 @@ header {
 
 .btn_tiles {
     width: 85%;
-    height:60px;
+    height:49px;
     border-radius: 12px;
     background-color:#E0774A;
     border: 3.5px solid #E0774A;
@@ -102,7 +102,7 @@ header {
 
 .btn_tiles:hover{
     background-color: transparent;
-    color: #E07A5F;
+    color: #fddad0;
 
 }
 
@@ -150,3 +150,20 @@ h1 {
     height: 20px;
     stroke: white;
 }
+
+/* Links section */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  
+  .link-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    text-decoration: none;
+    color: #fddad0;
+  }
