@@ -53,7 +53,7 @@ function setBio(bioText) {
   bioElement.textContent = bioText;
 }
 
-//------>> Seteo de valores <<------
+//------>> Profile seteo de valores <<------
 
-setUsername('Jhonatn Prado');
-setBio('Trainee Full Stack Developer');
+setUsername('Jhonatan Prado');
+setBio('🔹Trainee Full Stack Developer🔹');
