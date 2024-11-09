@@ -1,11 +1,11 @@
-//------------> DECLARACIONES GLOBALES Bio & Profile <----------------*/
+//------------> Bio & Profile <----------------*/
 
 const usernameElement = document.getElementById('userName'); //---> Guarda el Username
 const bioElement = document.getElementById('aboutPofile'); //---> Guarda el Bio del profile
 
 
 /* ------------------------------------------------- */
-//-------------------->  Declaraciones Botones<-----------------------
+//-------------------->  Botones<-----------------------
   const menuButton = document.querySelector('.menu-button');
   const card = document.querySelector('.card');
   const closeButton = document.querySelector('.close-button');
